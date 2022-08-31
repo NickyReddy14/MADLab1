@@ -12,25 +12,24 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText num1;
+    /*private EditText num1;
     private EditText num2;
-    private Button btn;
-    private Button clch;
-    private Button szch;
+    private Button btn;*/
+    private Button clch,szch;
     private TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        num1 = (EditText)findViewById(R.id.n1);
+        /*num1 = (EditText)findViewById(R.id.n1);
         num2 = (EditText)findViewById(R.id.n2);
-        btn = (Button)findViewById(R.id.b1);
+        btn = (Button)findViewById(R.id.b1);*/
         text = (TextView)findViewById(R.id.t);
         clch = (Button)findViewById(R.id.clr);
         szch = (Button)findViewById(R.id.sze);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        /*btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int x = Integer.parseInt(num1.getText().toString());
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 int sum = x+y;
                 text.setText(String.valueOf(sum));
             }
-        });
+        });*/
 
         clch.setOnClickListener(new View.OnClickListener() {
             @Override
